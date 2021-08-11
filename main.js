@@ -40,7 +40,7 @@ window.addEventListener("keypress", (e) => {
   }
 });
 
-button.addEventListener("click", (e) => {
+button.addEventListener("click", () => {
   if (input.value) {
     makeListItem(input.value);
   }
