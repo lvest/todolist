@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="main.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section class="todolist">
+      <header class="header">
+        <i class="fas fa-chevron-left"></i>
+        <span>Todo List</span>
+        <i class="fas fa-chevron-right"></i>
+      </header>
+      <ul class="todos">
+        <li class="todo__row">
+          <div class="todo">
+            <span class="todo__name">Javascript 공부하기❗</span>
+            <button class="todo__button">
+              <i class="far fa-trash-alt"></i>
+            </button>
+          </div>
+        </li>
+      </ul>
+      <footer class="footer">
+        <input type="text" class="footer__input" placeholder="Add a todo" />
+        <button class="footer__button">
+          <i class="fas fa-plus"></i>
+        </button>
+      </footer>
+    </section>
+  </body>
+</html>
