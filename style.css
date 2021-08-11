@@ -2,6 +2,7 @@
   /*color*/
   --blue: rgb(112, 123, 202);
   --blue-light: rgb(152, 164, 255);
+  --blue-dark: rgb(85, 93, 155);
   --white: rgb(238, 239, 248);
 
   /*font size*/
@@ -17,6 +18,7 @@
   /*space*/
   --space-large: 12px;
   --space-medium: 8px;
+  --space-small: 4px;
 }
 
 * {
@@ -54,7 +56,7 @@ body {
 
 .main {
   height: 80%;
-  padding: var(--space-medium) var(--space-large);
+  padding: var(--space-large);
 }
 
 .today {
@@ -63,17 +65,22 @@ body {
 }
 
 .todos {
-  padding: var(--space-medium) var(--space-large);
+  padding: var(--space-large) var(--space-small);
   font-size: var(--font-medium);
 }
 
 .todo__row {
   list-style: none;
+  margin-bottom: 4px;
 }
 
 .todo {
   display: flex;
   justify-content: space-between;
+  color: var(--blue-dark);
+  padding: var(--space-small) var(--space-large);
+  border: var(--line);
+  border-radius: 20px;
 }
 
 .todo__button {
@@ -82,10 +89,12 @@ body {
   font-size: var(--font-medium);
   cursor: pointer;
   transition: 0.1s all ease-in-out;
+  color: var(--blue-dark);
 }
 
 .todo__button:hover {
   transform: rotate(10deg);
+  color: var(--blue);
 }
 
 .footer {
